@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ME Assign</title>
+</head>
+<body>
+	<form>
+		<input type="text"  id="put1" onkeyup="write1()"><br /></input>
+		<input type="text" 	id="put2" onkeyup="write2()"><br /></input>
+		<input type="text" 	id="put3" onkeyup="write3()"><br /></input>
+		<input type="text"  id="put4" onkeyup="write4()"><br /></input>
+		<input type="text"  id="put5" onkeyup="write5()"><br /></input>
+	</form>	
+</body>
+		<script>
+		function write1(){
+			var n = document.getElementById("put1");
+			var np = document.getElementsByTagName("INPUT");
+				for(var x = 0; x < np.length;x++){
+					np[x].value = n.value;
+				}		
+		}
+		</script>
+</html>
